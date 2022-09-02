@@ -1,0 +1,1 @@
+/usr/bin/firefox $(ls ~/Desktop/doc/b*_*u*.pdf)
