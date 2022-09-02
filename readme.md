@@ -1,2 +1,2 @@
-![](tmp/scap1.png)
-![](tmp/scap2.png)
+![](tmp/scap1.jpg)
+![](tmp/scap2.jpg)
