@@ -1,2 +1,1 @@
-![](tmp/scap2.jpg)
-![](tmp/scap1.jpg)
+![](https://github.com/astrlux/assets/blob/master/img/scap.jpg)
