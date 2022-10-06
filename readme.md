@@ -5,4 +5,4 @@ Running arch linux!!!
 </details>
 
 
-Credits: [seanhogan01](https://github.com/seanhogan01/D-racula-WM), [lukesmith](lukesmith.xyz)
+Credits: [seanhogan01](https://github.com/seanhogan01/D-racula-WM), [lukesmith](https://lukesmith.xyz)
