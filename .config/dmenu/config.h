@@ -7,16 +7,15 @@ static int min_width = 500;  /* minimum width when centered */
 static int fuzzy = 1;        /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-	"JetBrainsMonoNL:pixelsize=28:antialias=true:autohint=true",
-	"JoyPixels:pixelsize=14:antialias=true:autohint=true"
+    "Hack:pixelsize=28:antialias=true:autohint=true",
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#cccccc", "#1e1f29" },
 	[SchemeSel] = { "#ffffff", "#9755b3" },
-	[SchemeSelHighlight] = { "#d7d7d7", "#000000" },
-	[SchemeNormHighlight] = { "#ab76c2", "#000000" },
+	[SchemeSelHighlight] = { "#d7d7d7", "#412c52" },
+	[SchemeNormHighlight] = { "#ab76c2", "#1e1f29" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 	[SchemeMid] = { "#d7d7d7", "#1f2026" },
 };

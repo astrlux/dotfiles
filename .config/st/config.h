@@ -2,7 +2,7 @@
 /* ST - Simple Terminal, Seán's Config */
 /*#####################################*/
 
-static char *font = "JetBrainsMonoNL:pixelsize=28:antialias=true:autohint=true";
+static char *font = "Hack-Bold.ttf:pixelsize=32:antialias=true:autohint=true";
 static char *font2[] = { 
     "JoyPixels:pixelsize=23:antialias=true:autohint=true",
 };
