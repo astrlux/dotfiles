@@ -4,9 +4,6 @@ local nor = {
     silent = true
 }
 vim.g.mapleader = ' '
--- Esc into normal mode faster
--- map('i', 'kj', '<Esc>', nor)
--- map('i', 'jk', '<Esc>', nor)
 map('i', '<C-s>', '<Esc>:w<CR>', nor)
 map('n', '<C-s>', ':w<CR>', nor)
 -- Manage plugins faster
@@ -83,3 +80,7 @@ map('n', '<C-u>', '<C-u>zz', nor)
 map('n', '<C-d>', '<C-d>zz', nor)
 map('n', 'N', 'Nzzzv', nor)
 map('n', 'n', 'nzzzv', nor)
+-- Esc into normal mode faster
+map('n', '<C-c>', '<Esc>', nor)
+-- map('i', 'kj', '<Esc>', nor)
+-- map('i', 'jk', '<Esc>', nor)
