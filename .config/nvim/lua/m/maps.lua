@@ -5,8 +5,8 @@ local nor = {
 }
 vim.g.mapleader = ' '
 -- Esc into normal mode faster
-map('i', 'kj', '<Esc>', nor)
-map('i', 'jk', '<Esc>', nor)
+-- map('i', 'kj', '<Esc>', nor)
+-- map('i', 'jk', '<Esc>', nor)
 map('i', '<C-s>', '<Esc>:w<CR>', nor)
 map('n', '<C-s>', ':w<CR>', nor)
 -- Manage plugins faster
@@ -71,8 +71,15 @@ map('n', '<LEADER>b', [[<CMD>lua require('telescope.builtin').buffers()<CR>]],
 -- File tree
 map('n', '<LEADER>t', ':Lexplore<CR>', nor)
 -- map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
-map('n', '<LEADER>abc<CR>',
-    'i#include "/Users/astrlux/stdc++.h"<CR>using namespace std;<Esc>o', nor)
+-- map('n', '<LEADER>abc<CR>',
+--     'i#include <bits/stdc++.h><CR>using namespace std;<Esc>o', nor)
 map('n', '<LEADER>pn',
     ':silent !pushd ~/notes; git add .; git commit -am \'changes\'; git push; popd;<CR>',
     nor)
+-- keep cursor in place while appending next line
+map('n', 'J', 'mzJ`z', nor)
+-- keep cursor in middle of page during half page jumping
+map('n', '<C-u>', '<C-u>zz', nor)
+map('n', '<C-d>', '<C-d>zz', nor)
+map('n', 'N', 'Nzzzv', nor)
+map('n', 'n', 'nzzzv', nor)

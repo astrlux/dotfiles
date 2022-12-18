@@ -35,16 +35,6 @@ require('packer').startup(function()
         'ms-jpq/coq_nvim',
         branch = 'coq',
     }
-    -- Colorschemes
-    use {
-        'astrlux/karonda',
-        requires = { 'rktjmp/lush.nvim' }
-    }
-    use 'navarasu/onedark.nvim'
-    use {
-        'Lokaltog/monotone.nvim',
-        requires = { 'rktjmp/lush.nvim' }
-    }
-    use 'bluz71/vim-moonfly-colors'
     use 'Mofiqul/dracula.nvim'
+    use 'pappasam/papercolor-theme-slim'
 end)
