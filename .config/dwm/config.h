@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx = 3;   /* border pixel of windows */
+static const unsigned int borderpx = 2;   /* border pixel of windows */
 static const unsigned int snap     = 36;  /* snap pixel */
 static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 1;   /* 0 means no bar */
@@ -9,7 +9,8 @@ static const int topbar            = 0;   /* 0 means bottom bar */
 static const int horizpadbar       = 7;   /* horizontal padding for statusbar */
 static const int vertpadbar        = 7;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
-    "JetBrainsMonoNL-Regular.ttf:size=9:antialias=true:autohint=true",
+    "Hack:size=9:antialias=true:autohint=true",
+    // "JetBrainsMonoNL-Regular.ttf:size=9:antialias=true:autohint=true",
 };
 static const char col_1[]  = "#1e1f29"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
@@ -35,7 +36,7 @@ static const unsigned int alphas[][3] = {
 
 /* tagging */
 /* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
-static const char *tags[] = { "WWW", "CLI", "DOC", "ETC", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "WWW", "CLI", "VIR", "MSG", "5", "6", "7", "8", "9" };
 
 
 static const Rule rules[] = {
@@ -80,7 +81,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0";
 static const char *dmenucmd[]   = { "dmenu_run", "-c", "-bw", "2", "-l", "12", "-g", "4", "-p", "Run: ", NULL };
 static const char *termcmd[]    = { "st", NULL };
-static const char *quitcmd[]	= { "kill", "dwm", NULL};
+static const char *quitcmd[]	= { "kill", "dwm", NULL };
+static const char *shutcmd[]    = { "systemctl", "poweroff", NULL };
 static const char *browsercmd[]	= { "firefox", NULL };
 static const char *mutecmd[]    = { "amixer", "-q", "set", "Master", "toggle", NULL };
 static const char *volupcmd[]   = { "amixer", "-q", "set", "Master", "15%+", "unmute", NULL };
@@ -101,6 +103,7 @@ static const char *pscrncmd[]	= { "scrot", "-s", "/home/ub/Desktop/screenshots/%
 
 static Key keys[] = {
 	/* modifier         key                 function        argument */
+	{ MODKEY,           XK_z,               spawn,          {.v = shutcmd } },
 	{ MODKEY|ShiftMask, XK_Return,          spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,	XK_b,	            spawn, 	        {.v = browsercmd } },
     { 0,                XK_Print,           spawn,	        {.v = pscrncmd } },

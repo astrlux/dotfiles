@@ -1,13 +1,13 @@
 #!/bin/sh
 
+# Xorg adjustments
+$HOME/.local/bin/screen &
+
 # Set wallpaper.
 $HOME/.fehbg &
 
 # Initialize status bar.
 $HOME/.config/dwm-bar/dwm_bar.sh &
 
-# Start compositor.
-#picom &
-
-# USER PROGRAMS
-#firefox &
+# User programs
+firefox &

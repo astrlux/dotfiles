@@ -1,0 +1,10 @@
+#!/bin/sh
+
+xrandr --output HDMI-A-0 --scale 1.2x1.2
+
+case $(date +%H:%M) in
+    (18:*)        xrandr --output HDMI-A-0 --brightness 0.63 --gamma 1:0.8:0.76;;
+    (0[012345]:*) xrandr --output HDMI-A-0 --brightness 0.63 --gamma 1:0.8:0.76;;
+    (06:[012]*)   xrandr --output HDMI-A-0 --brightness 0.63 --gamma 1:0.8:0.76;;
+    (*)           xrandr --output HDMI-A-0 --brightness 1    --gamma 1:1:1;;
+esac

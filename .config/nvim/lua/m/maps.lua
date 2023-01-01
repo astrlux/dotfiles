@@ -14,7 +14,7 @@ map('n', '<LEADER>4', ':PackerClean<CR>', nor)
 -- Indent visual mode
 map('v', '<', '<gv', nor)
 map('v', '>', '>gv', nor)
-map('i', '{<CR>', '{<CR>}<ESC><S-O>', nor)
+map('i', '{', '{<CR>}<ESC><S-O>', nor)
 -- Move cursor faster
 map('n', '<DOWN>', '9j', nor)
 map('v', '<DOWN>', '9j', nor)

@@ -32,7 +32,7 @@ static unsigned int cursorthickness = 2;
 static int bellvolume = 0;
 
 char *termname = "st-256color";
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 float alpha = 0.90;
 
 static const char *colorname[] = {
@@ -67,7 +67,7 @@ unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
 static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 15;
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 1;  // 6;
 static unsigned int cols = 80;
 static unsigned int rows = 24;
 static unsigned int mouseshape = XC_xterm;
