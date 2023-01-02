@@ -3,12 +3,8 @@
 now=$(date +%H)
 after6pm="1[89]|2[0123]"
 before7am="0[0123456]"
-
-nightlight="xrandr --output HDMI-A-0 --brightness 0.55 --gamma 1:0.88:0.76"
-daylight="xrandr --output HDMI-A-0 --brightness 1 --gamma 1:1:1"
-
 if [[ $now =~ $after6pm || $now =~ $before7am ]]; then
-    ${nightlight}
+    xsct 3420 0.7 &
 else
-    ${daylight}
+    xsct 6500 1 &
 fi
