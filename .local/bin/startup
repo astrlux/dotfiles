@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Xorg adjustments
+# X window server
 $HOME/.local/bin/screen &
 
 # Set wallpaper.
@@ -10,4 +10,3 @@ $HOME/.fehbg &
 $HOME/.config/dwm-bar/dwm_bar.sh &
 
 # User programs
-firefox &

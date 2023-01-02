@@ -3,7 +3,6 @@ o.timeoutlen        = 360
 o.number            = true
 o.relativenumber    = true
 o.guicursor         = ''
-o.cursorline        = false
 o.signcolumn        = 'no'
 o.showcmd           = false
 o.showmode          = true

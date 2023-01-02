@@ -1,10 +1,14 @@
 #!/bin/sh
 
-xrandr --output HDMI-A-0 --scale 1.2x1.2
+now=$(date +%H)
+after6pm="1[89]|2[0123]"
+before7am="0[0123456]"
 
-case $(date +%H:%M) in
-    (18:*)        xrandr --output HDMI-A-0 --brightness 0.63 --gamma 1:0.8:0.76;;
-    (0[012345]:*) xrandr --output HDMI-A-0 --brightness 0.63 --gamma 1:0.8:0.76;;
-    (06:[012]*)   xrandr --output HDMI-A-0 --brightness 0.63 --gamma 1:0.8:0.76;;
-    (*)           xrandr --output HDMI-A-0 --brightness 1    --gamma 1:1:1;;
-esac
+nightlight="xrandr --output HDMI-A-0 --brightness 0.55 --gamma 1:0.88:0.76"
+daylight="xrandr --output HDMI-A-0 --brightness 1 --gamma 1:1:1"
+
+if [[ $now =~ $after6pm || $now =~ $before7am ]]; then
+    ${nightlight}
+else
+    ${daylight}
+fi
