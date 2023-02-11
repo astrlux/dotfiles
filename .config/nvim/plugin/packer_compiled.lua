@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/home/ub/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  coq_nvim = {
-    loaded = true,
-    path = "/home/ub/.local/share/nvim/site/pack/packer/start/coq_nvim",
-    url = "https://github.com/ms-jpq/coq_nvim"
-  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "/home/ub/.local/share/nvim/site/pack/packer/start/dracula.nvim",
@@ -119,10 +114,25 @@ _G.packer_plugins = {
     path = "/home/ub/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/ub/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["jellybeans-nvim"] = {
+    loaded = true,
+    path = "/home/ub/.local/share/nvim/site/pack/packer/start/jellybeans-nvim",
+    url = "https://github.com/metalelf0/jellybeans-nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/ub/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/ub/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -144,11 +154,6 @@ _G.packer_plugins = {
     path = "/home/ub/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-lspinstall"] = {
-    loaded = true,
-    path = "/home/ub/.local/share/nvim/site/pack/packer/start/nvim-lspinstall",
-    url = "https://github.com/kabouzeid/nvim-lspinstall"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/ub/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -158,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ub/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  ["papercolor-theme-slim"] = {
+    loaded = true,
+    path = "/home/ub/.local/share/nvim/site/pack/packer/start/papercolor-theme-slim",
+    url = "https://github.com/pappasam/papercolor-theme-slim"
   },
   ["plenary.nvim"] = {
     loaded = true,

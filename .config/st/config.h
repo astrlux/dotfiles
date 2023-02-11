@@ -2,9 +2,10 @@
 /* ST - Simple Terminal, Seán's Config */
 /*#####################################*/
 
-static char *font = "Hack-Bold.ttf:pixelsize=32:antialias=true:autohint=true";
+static char *font = "JetBrainsMonoNL-Regular:pixelsize=33:antialias=true:autohint=true";
 static char *font2[] = { 
     "JoyPixels:pixelsize=23:antialias=true:autohint=true",
+    // "Hack-Bold.ttf:pixelsize=32:antialias=true:autohint=true";
 };
 static int borderpx = 2;
 static char *shell = "/bin/sh";
@@ -64,10 +65,10 @@ static const char *colorname[] = {
 };
 
 unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
+unsigned int defaultbg = 256; // 16 for black background
 static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 15;
-static unsigned int cursorshape = 1;  // 6;
+static unsigned int cursorshape = 6;
 static unsigned int cols = 80;
 static unsigned int rows = 24;
 static unsigned int mouseshape = XC_xterm;
@@ -96,8 +97,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-	{ TERMMOD,              XK_K,           zoom,           {.f = +1} },
-	{ TERMMOD,              XK_J,           zoom,           {.f = -1} },
+	{ TERMMOD,              XK_K,           zoom,           {.f = +5} },
+	{ TERMMOD,              XK_J,           zoom,           {.f = -5} },
 	{ TERMMOD,              XK_U,           zoomreset,      {.f =  0} },
 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },

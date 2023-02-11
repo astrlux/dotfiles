@@ -9,8 +9,8 @@ static const int topbar            = 0;   /* 0 means bottom bar */
 static const int horizpadbar       = 7;   /* horizontal padding for statusbar */
 static const int vertpadbar        = 7;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
-    "Hack:size=9:antialias=true:autohint=true",
-    // "JetBrainsMonoNL-Regular.ttf:size=9:antialias=true:autohint=true",
+    "JetBrainsMonoNL-Regular:size=10:antialias=true:autohint=true",
+    // "Hack:size=9:antialias=true:autohint=true",
 };
 static const char col_1[]  = "#1e1f29"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
@@ -36,7 +36,7 @@ static const unsigned int alphas[][3] = {
 
 /* tagging */
 /* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
-static const char *tags[] = { "WWW", "CLI", "VIR", "MSG", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "WWW", "CLI", "MSG", "VIR", "5", "6", "7", "8", "9" };
 
 
 static const Rule rules[] = {
@@ -50,7 +50,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 

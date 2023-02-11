@@ -1,4 +1,5 @@
 require 'm.plugins'
+require 'm.lspzero'
 require 'm.maps'
 require 'm.sets'
 require 'm.appearance'

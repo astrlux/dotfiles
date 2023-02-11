@@ -3,18 +3,16 @@ local nor = {
     noremap = true,
     silent = true
 }
-vim.g.mapleader = ' '
+vim.g.mapleader = ','
 map('i', '<C-s>', '<Esc>:w<CR>', nor)
 map('n', '<C-s>', ':w<CR>', nor)
 -- Manage plugins faster
-map('n', '<LEADER>1', ':luafile %<CR>', nor)
-map('n', '<LEADER>2', ':PackerUpdate<CR>', nor)
-map('n', '<LEADER>3', ':PackerInstall<CR>', nor)
-map('n', '<LEADER>4', ':PackerClean<CR>', nor)
+map('n', '<LEADER>w', ':w<CR>', nor)
+map('n', '<LEADER>q', ':q<CR>', nor)
 -- Indent visual mode
 map('v', '<', '<gv', nor)
 map('v', '>', '>gv', nor)
-map('i', '{', '{<CR>}<ESC><S-O>', nor)
+map('i', '{<CR>', '{<CR>}<ESC><S-O>', nor)
 -- Move cursor faster
 map('n', '<DOWN>', '9j', nor)
 map('v', '<DOWN>', '9j', nor)
@@ -28,9 +26,6 @@ map('n', '<LEADER>l', ':wincmd l<CR>', nor)
 -- Switch between buffers
 map('', '<C-l>', ':bnext<CR>', nor)
 map('', '<C-h>', ':bprev<CR>', nor)
--- Save files faster
-map('n', '<LEADER>w', ':w<CR>', nor)
-map('n', '<LEADER>q', ':q<CR>', nor)
 -- Show timestamped undo history
 map('n', '<LEADER>u', ':UndotreeShow<CR>', nor)
 -- Paste smoothly
@@ -67,9 +62,6 @@ map('n', '<LEADER>b', [[<CMD>lua require('telescope.builtin').buffers()<CR>]],
     nor)
 -- File tree
 map('n', '<LEADER>t', ':Lexplore<CR>', nor)
--- map('n', '<LEADER>abc<CR>', 'iabcdefghijklmnopqrstuvwxyz<Esc>', nor)
--- map('n', '<LEADER>abc<CR>',
---     'i#include <bits/stdc++.h><CR>using namespace std;<Esc>o', nor)
 map('n', '<LEADER>pn',
     ':silent !pushd ~/notes; git add .; git commit -am \'changes\'; git push; popd;<CR>',
     nor)
@@ -80,7 +72,3 @@ map('n', '<C-u>', '<C-u>zz', nor)
 map('n', '<C-d>', '<C-d>zz', nor)
 map('n', 'N', 'Nzzzv', nor)
 map('n', 'n', 'nzzzv', nor)
--- Esc into normal mode faster
-map('n', '<C-c>', '<Esc>', nor)
--- map('i', 'kj', '<Esc>', nor)
--- map('i', 'jk', '<Esc>', nor)

@@ -18,8 +18,6 @@ require('packer').startup(function()
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-    use 'neovim/nvim-lspconfig' -- Collection of configs for built-in LSP client
-    use 'kabouzeid/nvim-lspinstall' -- LSPInstall feature
     use { -- native C port of fzf
         'nvim-telescope/telescope-fzf-native.nvim',
         run = 'make'
@@ -30,30 +28,33 @@ require('packer').startup(function()
     }
     use 'mbbill/undotree' -- View undo history
     use 'tpope/vim-surround' -- Surround
-    use { -- Auto-completion
-        'ms-jpq/coq_nvim',
-        branch = 'coq',
-    }
     use 'Mofiqul/dracula.nvim'
     use {
+        'metalelf0/jellybeans-nvim',
+        requires = 'rktjmp/lush.nvim'
+    }
+    use 'pappasam/papercolor-theme-slim'
+	use 'lukas-reineke/indent-blankline.nvim'
+    use {
         'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},
-            {'williamboman/mason.nvim'},
-            {'williamboman/mason-lspconfig.nvim'},
-      
+            {'neovim/nvim-lspconfig'},             -- Required
+            {'williamboman/mason.nvim'},           -- Optional
+            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},
-            {'hrsh7th/cmp-buffer'},
-            {'hrsh7th/cmp-path'},
-            {'saadparwaiz1/cmp_luasnip'},
-            {'hrsh7th/cmp-nvim-lsp'},
-            {'hrsh7th/cmp-nvim-lua'},
-      
+            {'hrsh7th/nvim-cmp'},         -- Required
+            {'hrsh7th/cmp-nvim-lsp'},     -- Required
+            {'hrsh7th/cmp-buffer'},       -- Optional
+            {'hrsh7th/cmp-path'},         -- Optional
+            {'saadparwaiz1/cmp_luasnip'}, -- Optional
+            {'hrsh7th/cmp-nvim-lua'},     -- Optional
+
             -- Snippets
-            {'L3MON4D3/LuaSnip'},
-            {'rafamadriz/friendly-snippets'},
+            {'L3MON4D3/LuaSnip'},             -- Required
+            {'rafamadriz/friendly-snippets'}, -- Optional
         }
-      }
+}
 end)

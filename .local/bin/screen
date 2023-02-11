@@ -1,10 +1,10 @@
 #!/bin/sh
 
 now=$(date +%H)
-after6pm="1[89]|2[0123]"
+after5pm="1[789]|2[0123]"
 before7am="0[0123456]"
-if [[ $now =~ $after6pm || $now =~ $before7am ]]; then
-    xsct 3420 0.7 &
+if [[ $now =~ $after5pm || $now =~ $before7am ]]; then
+    xsct 4000 0.6 &
 else
     xsct 6500 1 &
 fi
