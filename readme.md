@@ -1,4 +1,4 @@
-Running arch linux!!!
+Running arch linux + DWM!!!
 
 <img src="https://raw.githubusercontent.com/ubhattac/assets/master/img/merge_from_ofoct.jpg"/>
 
