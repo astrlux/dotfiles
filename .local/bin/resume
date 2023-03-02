@@ -1,1 +1,1 @@
-/usr/bin/firefox $(ls ~/Desktop/docs/b*_*u*.pdf)
+/usr/bin/firefox $(ls ~/docs/personal/b*_*u*.pdf)

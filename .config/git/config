@@ -188,7 +188,12 @@
 	#fetch = +refs/pull/*/head:refs/remotes/origin/pull/*
 
 [commit]
-	gpgsign = true
+	gpgsign = false
 [pull]
 	rebase = true
 
+[user]
+	email = 37908451+ubhattac@users.noreply.github.com
+	name = ubhattac
+[gpg]
+	program = gpg
