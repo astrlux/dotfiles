@@ -87,7 +87,7 @@ static const char *browsercmd[]	= { "firefox", NULL };
 static const char *mutecmd[]    = { "amixer", "-q", "set", "Master", "toggle", NULL };
 static const char *volupcmd[]   = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
 static const char *voldocmd[]   = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
-static const char *pscrncmd[]	= { "scrot", "-s", "/home/ub/Desktop/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL };
+static const char *pscrncmd[]	= { "scrot", "-s", "/home/ub/docs/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL };
 //static const char *miccmd[]     = { "amixer", "set", "Capture", "toggle", NULL };
 
 /* Custom Definitions */
@@ -104,7 +104,7 @@ static const char *pscrncmd[]	= { "scrot", "-s", "/home/ub/Desktop/screenshots/%
 static Key keys[] = {
 	/* modifier         key                 function        argument */
 	{ MODKEY,           XK_z,               spawn,          {.v = shutcmd } },
-	{ MODKEY|ShiftMask, XK_Return,          spawn,          {.v = termcmd } },
+	{ MODKEY|ShiftMask, XK_t,               spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,	XK_b,	            spawn, 	        {.v = browsercmd } },
     { 0,                XK_Print,           spawn,	        {.v = pscrncmd } },
     { 0,                XK_AudioMute,       spawn,          {.v = mutecmd } },
