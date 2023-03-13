@@ -4,7 +4,7 @@ now=$(date +%H)
 after5pm="1[789]|2[0123]"
 before7am="0[0123456]"
 if [[ $now =~ $after5pm || $now =~ $before7am ]]; then
-    xsct 3800 0.7 &
+    xsct 3700 0.7 &
 else
     xsct 6500 1 &
 fi

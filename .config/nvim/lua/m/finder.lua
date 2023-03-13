@@ -1,5 +1,6 @@
 local to_ignore = {
     '.git',
+    '.local',
 }
 local actions = require('telescope.actions')
 require('telescope').setup({
@@ -13,10 +14,11 @@ require('telescope').setup({
         mappings = {
             i = {
                 ['<C-x>'] = false,
-                ['<C-q>'] = actions.send_to_qflist
-            }
+                ['<C-q>'] = actions.smart_add_to_qflist + actions.open_qflist,
+            },
         },
-        layout_config = { -- place preview on top
+        layout_config = {
+                                   -- place preview on top
             flex = {
                 flip_columns = 720 -- remove preview under these columns
             }
@@ -37,6 +39,7 @@ require 'telescope'.load_extension 'fzf'
 
 local M = {}
 M.search_dotfiles = function()
+    print(vim.env.DOTFILES)
     require('telescope.builtin').find_files({
         prompt_title = 'dotfiles',
         cwd = vim.env.DOTFILES,
