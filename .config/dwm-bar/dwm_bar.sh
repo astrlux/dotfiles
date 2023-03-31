@@ -11,7 +11,8 @@ DIR=$(dirname "/home/ub/.config/dwm-bar/bar-functions/")
 export IDENTIFIER="unicode"
 
 # Change the charachter(s) used to seperate modules. If two are used, they will be placed at the start and end.
-export DELIMITER="|"
+#export DELIMITER="|"
+export DELIMITER="｜"
 
 # Import the modules
 . "$DIR/bar-functions/dwm_alsa.sh"

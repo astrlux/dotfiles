@@ -14,4 +14,4 @@ augroup END
 "    autocmd colorscheme * :hi normal guibg=none
 "augroup END
 ]], false)
-vim.cmd 'colorscheme dracula'
+cmd 'colorscheme dracula'

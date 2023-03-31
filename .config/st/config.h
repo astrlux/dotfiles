@@ -4,7 +4,7 @@
 
 static char *font = "JetBrainsMonoNL-Regular:pixelsize=33:antialias=true:autohint=true";
 static char *font2[] = { 
-    "JoyPixels:pixelsize=23:antialias=true:autohint=true",
+    "JoyPixels:pixelsize=33:antialias=true:autohint=true",
     // "Hack-Bold.ttf:pixelsize=32:antialias=true:autohint=true";
 };
 static int borderpx = 2;
@@ -45,7 +45,7 @@ static const char *colorname[] = {
 	"#51afef",
 	"#c678dd",
 	"#5699af",
-	"#ffffff",
+	"#dddddd",
 
 	/* 8 bright colours */
 	"#5b6268",
@@ -55,13 +55,13 @@ static const char *colorname[] = {
 	"#3071db",
 	"#a9a1e1",
 	"#46d9ff",
-	"#ffffff",
+	"#dddddd",
 
 	[255] = 0,
 	/* extra colours*/
 	"#1e1f29",
-	"#ffffff",
-	"#ffffff",
+	"#dddddd",
+	"#dddddd",
 };
 
 unsigned int defaultfg = 257;

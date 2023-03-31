@@ -6,5 +6,5 @@ before7am="0[0123456]"
 if [[ $now =~ $after5pm || $now =~ $before7am ]]; then
     xsct 3700 0.7 &
 else
-    xsct 6500 1 &
+    xsct 5400 &
 fi

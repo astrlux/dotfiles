@@ -58,7 +58,7 @@ map('n', '<LEADER>/',
     [[<CMD>lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>]], nor)
 map('n', '<LEADER>cs',
     [[<CMD>lua require'telescope.builtin'.colorscheme{}<CR>]], nor)
-map('n', '<LEADER>b', [[<CMD>lua require('telescope.builtin').buffers()<CR>]],
+map('n', '<LEADER>sb', [[<CMD>lua require('telescope.builtin').buffers()<CR>]],
     nor)
 -- File tree
 map('n', '<LEADER>t', ':Lexplore<CR>', nor)

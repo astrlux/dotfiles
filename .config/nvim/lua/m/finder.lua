@@ -2,7 +2,6 @@ local to_ignore = {
     '.git',
     '.local',
 }
-local actions = require('telescope.actions')
 require('telescope').setup({
     defaults = {
         file_ignore_patterns = to_ignore,
@@ -11,14 +10,7 @@ require('telescope').setup({
         file_previewer = require('telescope.previewers').vim_buffer_cat.new,
         grep_previewer = require('telescope.previewers').vim_buffer_vimgrep.new,
         qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
-        mappings = {
-            i = {
-                ['<C-x>'] = false,
-                ['<C-q>'] = actions.smart_add_to_qflist + actions.open_qflist,
-            },
-        },
-        layout_config = {
-                                   -- place preview on top
+        layout_config = { -- place preview on top
             flex = {
                 flip_columns = 720 -- remove preview under these columns
             }
