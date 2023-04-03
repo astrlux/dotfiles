@@ -4,13 +4,15 @@
 static const unsigned int borderpx = 2;   /* border pixel of windows */
 static const unsigned int snap     = 27;  /* snap pixel */
 static const unsigned int gappx    = 6;   /* pixel gap between clients */
-static const int showbar           = 1;   /* 0 means no bar */
+static const int showbar           = 0;   /* 0 means no bar */
 static const int topbar            = 0;   /* 0 means bottom bar */
-static const int horizpadbar       = 4;   /* horizontal padding for statusbar */
-static const int vertpadbar        = 4;   /* vertical padding for statusbar */
+static const int horizpadbar       = 3;   /* horizontal padding for statusbar */
+static const int vertpadbar        = 5;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
+    "Hack:size=10:antialias=true:autohint=true",
+    "Consolas-Regular:size=11:antialias=true:autohint=true",
     "JetBrainsMonoNL-Regular:size=10:antialias=true:autohint=true",
-    // "Hack:size=9:antialias=true:autohint=true",
+    "Consolas-Regular:size=10:antialias=true:autohint=true",
 };
 static const char col_1[]  = "#1e1f29"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
@@ -35,8 +37,8 @@ static const unsigned int alphas[][3] = {
 };
 
 /* tagging */
-/* static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" }; */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+// static const char *tags[] = { "www", "cli", "msg", "vir", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
