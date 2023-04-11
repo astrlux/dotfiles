@@ -10,5 +10,5 @@ $HOME/.config/dwm-bar/dwm_bar.sh &
 $HOME/.fehbg &
 
 # User programs
-xcompmgr -c &
+xcompmgr -f -c -C -o.55 -D7 &
 firefox &
