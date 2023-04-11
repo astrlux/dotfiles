@@ -1,4 +1,5 @@
 local o             = vim.opt
+o.cursorline        = true
 o.timeoutlen        = 360
 o.number            = true
 o.relativenumber    = true

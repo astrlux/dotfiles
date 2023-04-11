@@ -7,4 +7,8 @@
 # Append ~/.local/bin to PATH
 PATH=$PATH:$HOME/.local/bin
 
-startx
+# Autorun startx
+if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
+    . startx
+    logout
+fi

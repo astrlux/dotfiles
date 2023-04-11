@@ -7,8 +7,9 @@ static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 0;   /* 0 means no bar */
 static const int topbar            = 0;   /* 0 means bottom bar */
 static const int horizpadbar       = 3;   /* horizontal padding for statusbar */
-static const int vertpadbar        = 5;   /* vertical padding for statusbar */
+static const int vertpadbar        = 6;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
+    "ConsolasLigaturizedv2:size=10:antialias=true:autohint=true",
     "Hack:size=10:antialias=true:autohint=true",
     "Consolas-Regular:size=11:antialias=true:autohint=true",
     "JetBrainsMonoNL-Regular:size=10:antialias=true:autohint=true",
