@@ -38,7 +38,7 @@ require('packer').startup(function()
             require('gitsigns').setup()
         end
     }
-    use 'lukas-reineke/indent-blankline.nvim'
+    -- use 'lukas-reineke/indent-blankline.nvim'
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',

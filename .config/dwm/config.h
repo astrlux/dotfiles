@@ -7,7 +7,7 @@ static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 0;   /* 0 means no bar */
 static const int topbar            = 0;   /* 0 means bottom bar */
 static const int horizpadbar       = 3;   /* horizontal padding for statusbar */
-static const int vertpadbar        = 6;   /* vertical padding for statusbar */
+static const int vertpadbar        = 8;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
     "ConsolasLigaturizedv2:size=10:antialias=true:autohint=true",
     "Hack:size=10:antialias=true:autohint=true",
@@ -52,7 +52,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
