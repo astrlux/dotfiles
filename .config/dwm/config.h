@@ -7,7 +7,7 @@ static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 0;   /* 0 means no bar */
 static const int topbar            = 0;   /* 0 means bottom bar */
 static const int horizpadbar       = 2;   /* horizontal padding for statusbar */
-static const int vertpadbar        = 8;   /* vertical padding for statusbar */
+static const int vertpadbar        = 7;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
     "ConsolasLigaturizedv2:size=10:antialias=true:autohint=true",
     "Hack:size=10:antialias=true:autohint=true",
