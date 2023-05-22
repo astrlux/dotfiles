@@ -11,7 +11,6 @@ static const int vertpadbar        = 7;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
     "ConsolasLigaturizedv2:size=10:antialias=true:autohint=true",
     "Hack:size=10:antialias=true:autohint=true",
-    "Consolas-Regular:size=11:antialias=true:autohint=true",
     "JetBrainsMonoNL-Regular:size=10:antialias=true:autohint=true",
     "Consolas-Regular:size=10:antialias=true:autohint=true",
 };
@@ -85,11 +84,12 @@ static const char *dmenucmd[]   = { "dmenu_run", "-c", "-bw", "2", "-l", "12", "
 static const char *termcmd[]    = { "st", NULL };
 static const char *quitcmd[]	= { "kill", "dwm", NULL };
 static const char *shutcmd[]    = { "systemctl", "poweroff", NULL };
-static const char *browsercmd[]	= { "firefox", NULL };
+static const char *browsercmd[]	= { "brave", NULL };
 static const char *mutecmd[]    = { "amixer", "-q", "set", "Master", "toggle", NULL };
 static const char *volupcmd[]   = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
 static const char *voldocmd[]   = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
-static const char *pscrncmd[]	= { "scrot", "-s", "/home/ub/docs/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL };
+//static const char *pscrncmd[]	= { "scrot", "-s", "/home/ub/docs/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL };
+static const char *pscrncmd[]	= { "capturescreen", NULL };
 //static const char *miccmd[]     = { "amixer", "set", "Capture", "toggle", NULL };
 
 /* Custom Definitions */

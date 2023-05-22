@@ -10,6 +10,5 @@ $HOME/.config/dwm-bar/dwm_bar.sh &
 $HOME/.fehbg &
 
 # User programs
-#xcompmgr -c -C -t-3 -l-3 -o.63 &
-picom &
+#xcompmgr -f -F -D6 -c -C -t-3 -l-3 -o.63 &
 #firefox &
