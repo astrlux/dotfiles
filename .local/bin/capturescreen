@@ -1,0 +1,7 @@
+#!/bin/sh
+
+screenshot_folder=$HOME/docs/screenshots/
+screenshot_name=%b%d::%H%M%S.png
+screenshot_location=$screenshot_folder$screenshot_name
+
+scrot -s $screenshot_location -e 'xclip -selection clipboard -t image/png -i $f'
