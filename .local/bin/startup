@@ -11,4 +11,4 @@ $HOME/.fehbg &
 
 # User programs
 #xcompmgr -f -F -D6 -c -C -t-3 -l-3 -o.63 &
-#firefox &
+firefox &
