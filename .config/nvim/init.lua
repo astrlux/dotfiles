@@ -1,8 +1,0 @@
-require 'm.plugins'
-require 'm.appearance'
-require 'm.lspzero'
-require 'm.maps'
-require 'm.sets'
-require 'm.highlight'
-require 'm.finder'
-require 'm.tree'
