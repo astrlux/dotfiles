@@ -1,10 +1,11 @@
-setup: `./install`
-
-operating system: arch linux
-
-window manager: dwm
-
-quirks: split keyboard
+```json
+{
+  "setup": "./install",
+  "operating_system": "Arch Linux",
+  "window_manager": "DWM",
+  "features": "split keyboard"
+}
+```
 
 <details>
     <summary>screenshots</summary>
