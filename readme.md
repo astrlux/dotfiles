@@ -1,6 +1,6 @@
 ```json
 {
-  "setup_script": "./install",
+  "setup_script": "sh install",
   "operating_system": "Arch Linux",
   "tiling_window_manager": "DWM",
   "cool_features": "split keyboard"
