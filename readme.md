@@ -1,9 +1,9 @@
 ```json
 {
-  "setup": "./install",
+  "setup_script": "./install",
   "operating_system": "Arch Linux",
-  "window_manager": "DWM",
-  "features": "split keyboard"
+  "tiling_window_manager": "DWM",
+  "cool_features": "split keyboard"
 }
 ```
 
