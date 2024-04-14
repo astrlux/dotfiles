@@ -1,3 +1,3 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
-	url = https://github.com/the-hidden-layer/nvim.git
+	url = https://github.com/TheHiddenLayer/nvim.git
