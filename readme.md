@@ -1,9 +1,9 @@
 ```json
-{
-  "setup_script": "sh install",
+"dotfiles": {
   "operating_system": "Arch Linux",
   "tiling_window_manager": "DWM",
-  "cool_features": "split keyboard"
+  "quirks": "split keyboard"
+  "install": "sh install",
 }
 ```
 
