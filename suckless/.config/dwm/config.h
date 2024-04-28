@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx = 2;   /* border pixel of windows */
+static const unsigned int borderpx = 3;   /* border pixel of windows */
 static const unsigned int snap     = 27;  /* snap pixel */
 static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 0;   /* 0 means no bar */
@@ -9,15 +9,16 @@ static const int topbar            = 0;   /* 0 means bottom bar */
 static const int horizpadbar       = 2;   /* horizontal padding for statusbar */
 static const int vertpadbar        = 7;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
+    "HackNerdFontMono:size=11:antialias=true:autohint=true",
     "ConsolasLigaturizedv2:size=10:antialias=true:autohint=true",
     "Hack:size=10:antialias=true:autohint=true",
     "JetBrainsMonoNL-Regular:size=10:antialias=true:autohint=true",
     "Consolas-Regular:size=10:antialias=true:autohint=true",
 };
-static const char col_1[]  = "#1e1f29"; /* background color of bar */
-static const char col_2[]  = "#282c34"; /* border color unfocused windows */
+static const char col_1[]  = "#19191a"; /* background color of bar */
+static const char col_2[]  = "#333333"; /* border color unfocused windows */
 static const char col_3[]  = "#ffffff";
-static const char col_4[]  = "#9755b3"; /* border color focused windows and tags */
+static const char col_4[]  = "#165668"; /* border color focused windows and tags */
 /* bar opacity 
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
@@ -38,7 +39,6 @@ static const unsigned int alphas[][3] = {
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
-// static const char *tags[] = { "www", "cli", "msg", "vir", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -51,7 +51,7 @@ static const Rule rules[] = {
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
@@ -81,13 +81,13 @@ static const Layout layouts[] = {
 
 static char dmenumon[2] = "0";
 static const char *dmenucmd[]   = { "dmenu_run", "-c", "-bw", "2", "-l", "12", "-g", "4", "-p", "Run: ", NULL };
-static const char *termcmd[]    = { "st", NULL };
+static const char *termcmd[]    = { "kitty", NULL };
 static const char *quitcmd[]	= { "kill", "dwm", NULL };
 static const char *shutcmd[]    = { "systemctl", "poweroff", NULL };
-static const char *browsercmd[]	= { "brave", NULL };
+static const char *browsercmd[]	= { "firefox", NULL };
 static const char *mutecmd[]    = { "amixer", "-q", "set", "Master", "toggle", NULL };
-static const char *volupcmd[]   = { "amixer", "-q", "set", "Master", "5%+", "unmute", NULL };
-static const char *voldocmd[]   = { "amixer", "-q", "set", "Master", "5%-", "unmute", NULL };
+static const char *volupcmd[]   = { "amixer", "-q", "set", "Master", "10%+", "unmute", NULL };
+static const char *voldocmd[]   = { "amixer", "-q", "set", "Master", "10%-", "unmute", NULL };
 //static const char *pscrncmd[]	= { "scrot", "-s", "/home/ub/docs/screenshots/%Y-%m-%d-%s_$wx$h.jpg", NULL };
 static const char *pscrncmd[]	= { "capturescreen", NULL };
 //static const char *miccmd[]     = { "amixer", "set", "Capture", "toggle", NULL };
