@@ -165,3 +165,7 @@ _testmain.go
 # linux kernel debs
 linux-*.deb
 
+
+# local settings
+local/.local/share/
+local/.local/state/
