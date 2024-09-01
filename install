@@ -1,6 +1,8 @@
 #!/bin/sh
 
-stow -t /etc etc # symlink to `/etc` dir
+git submodule update --init --recursive
+
+stow -t /etc etc # symbolically link to `/etc`
 stow bash
 stow xorg
 stow local
