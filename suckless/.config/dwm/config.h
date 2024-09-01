@@ -15,10 +15,10 @@ static const char *fonts[]         = {
     "JetBrainsMonoNL-Regular:size=10:antialias=true:autohint=true",
     "Consolas-Regular:size=10:antialias=true:autohint=true",
 };
-static const char col_1[]  = "#19191a"; /* background color of bar */
+static const char col_1[]  = "#1A1B26"; /* background color of bar */
 static const char col_2[]  = "#333333"; /* border color unfocused windows */
-static const char col_3[]  = "#ffffff";
-static const char col_4[]  = "#165668"; /* border color focused windows and tags */
+static const char col_3[]  = "#FFFFFF";
+static const char col_4[]  = "#2C4075"; /* border color focused windows and tags */
 /* bar opacity 
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
