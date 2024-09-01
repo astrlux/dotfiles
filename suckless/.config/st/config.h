@@ -4,7 +4,7 @@
 
 static char *font = "ConsolasLigaturizedv2:pixelsize=32:antialias=true:autohint=true";
 static char *font2[] = { 
-    "Hack-Bold.ttf:pixelsize=32:antialias=true:autohint=true",
+    "Hack-Bold.ttf:pixelsize=18:antialias=true:autohint=true",
     //"JoyPixels:pixelsize=33:antialias=true:autohint=true",
     //"Consolas-Regular:pixelsize=38:antialias=true:autohint=true",
     //"JetBrainsMonoNL-Regular:pixelsize=33:antialias=true:autohint=true"

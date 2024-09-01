@@ -36,6 +36,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 	unset f
 fi
 
-xrandr --output HDMI-A-0 --scale 1.25x1.25
+#xrandr --output HDMI-A-0 --mode 2560x1440 --rate 144
 $HOME/.local/bin/startup &
 exec dwm

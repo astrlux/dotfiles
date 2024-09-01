@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx = 3;   /* border pixel of windows */
+static const unsigned int borderpx = 2;   /* border pixel of windows */
 static const unsigned int snap     = 27;  /* snap pixel */
 static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 0;   /* 0 means no bar */
@@ -9,7 +9,7 @@ static const int topbar            = 0;   /* 0 means bottom bar */
 static const int horizpadbar       = 2;   /* horizontal padding for statusbar */
 static const int vertpadbar        = 7;   /* vertical padding for statusbar */
 static const char *fonts[]         = {
-    "HackNerdFontMono:size=11:antialias=true:autohint=true",
+    "HackNerdFontMono:size=13:antialias=true:autohint=true",
     "ConsolasLigaturizedv2:size=10:antialias=true:autohint=true",
     "Hack:size=10:antialias=true:autohint=true",
     "JetBrainsMonoNL-Regular:size=10:antialias=true:autohint=true",

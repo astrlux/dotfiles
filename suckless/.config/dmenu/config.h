@@ -7,7 +7,7 @@ static int min_width = 500;  /* minimum width when centered */
 static int fuzzy = 1;        /* -F  option; if 0, dmenu doesn't use fuzzy matching     */
 /* -fn option overrides fonts[0]; default X11 font or font set */
 static const char *fonts[] = {
-    "HackNerdFontMono:pixelsize=28:antialias=true:autohint=true",
+    "HackNerdFontMono:pixelsize=18:antialias=true:autohint=true",
     "Hack:pixelsize=28:antialias=true:autohint=true",
     "ConsolasLigaturizedv2:pixelsize=26:antialias=true:autohint=true",
     "Consolas-Regular:pixelsize=30:antialias=true:autohint=true",
